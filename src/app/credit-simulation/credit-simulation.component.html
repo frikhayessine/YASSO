@@ -38,10 +38,13 @@
       </div>
   </div> 
   
-    <mat-card class="parentCard" *ngIf="simulatorClicked==0">
+    <mat-card *ngIf="simulatorClicked==0">
       <mat-card-title style="text-align:center; margin-bottom: 20px; align-items: center;">Simulateur de credit professionel</mat-card-title>
 
       <mat-card-content>
+
+       <div  class="parentCard">
+
         <mat-card class="childCard">
       <mat-card-content >
       <div class="modal-body">
@@ -84,10 +87,11 @@
       </mat-card-actions>
     </mat-card-footer>
             </mat-card>
-             <div class="mensualityBox">
+             <div class="childCard mensualityBox">
               <mat-card-title>mensualité :</mat-card-title>
               <mat-card-content>{{mensuality | currency : 'EUR' : true : '1.2-2'}}</mat-card-content>
             </div> 
+            </div>
             </mat-card-content> 
     
     </mat-card> 
